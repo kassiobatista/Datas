@@ -3,7 +3,7 @@
 /*/(Protheus.doc) Manipulação de Datas
 Função : Analista de Sistemas
 @author Kassio B.
-Since 21/12/2023
+Since 24/12/2023
 @version 12 superior
 /*/
 
