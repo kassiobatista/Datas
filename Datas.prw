@@ -1,7 +1,7 @@
 #INCLUDE "Protheus.ch"
 
 /*/(Protheus.doc) Operadores da Linguagem
-Função : Analista de Sistemas
+FunÃ§Ã£o : Analista de Sistemas
 @author Kassio B.
 Since 21/12/2023
 @version 12 superior
@@ -23,7 +23,7 @@ User Function Datas()
 
     dDataRes    := CTOD("16/10/2002")
 
-    // Converte uma data para texto nao formato AAAAMMDD (Esse é o formato que as datas são gravadas nas tabelas Protheus)
+    // Converte uma data para texto nao formato AAAAMMDD (Esse Ã© o formato que as datas sÃ£o gravadas nas tabelas Protheus)
     cData       := DTOS(dDataAtual)
 
     // Converte um texto no formato AAAAMMDD para data
@@ -33,16 +33,16 @@ User Function Datas()
     dDataRes        := DataValida(CTOD("23/12/2023"), .T.) // Proximo dia util
     dDataRes        := DataValida(CTOD("23/12/2023"), .F.) // Dia util anterior a data passada no parametro
 
-    // Retorna o número do dia de uma data - Domingo = 1; Segunda = 2...
+    // Retorna o nÃºmero do dia de uma data - Domingo = 1; Segunda = 2...
     nResp           := DAY(dDataAtual)
 
-    // Retorna o número do mês de uma data  
+    // Retorna o nÃºmero do mÃªs de uma data  
     nResp           := MONTH(dDataAtual)
 
-    // Retorna o número do ano de uma data 
+    // Retorna o nÃºmero do ano de uma data 
     nResp           := YEAR(dDataAtual)
 
-    // Retorna o nome do mês de uma data
+    // Retorna o nome do mÃªs de uma data
     cResp           := MesExtenso(dDataAtual)
 
     // Retorna uma string de ano e mes no formato AAAAMM
@@ -75,15 +75,15 @@ User Function Datas()
     dDataRes        := YearSum(dDataAtual, 3)
     dDataRes        := YearSub(dDataAtual, 3)
 
-    // Diferença de dias, meses ou anos entre duas datas
-    nResp           := DateDiffDay(CtoD("16/10/2002", Date()))
-    nResp           := DateDiffMonth(CtoD("16/10/2002", Date()))
-    nResp           := DateDiffYear(CtoD("16/10/2002", Date()))
+    // DiferenÃ§a de dias, meses ou anos entre duas datas
+    nResp           := DateDiffDay(CtoD("16/10/2002"), Date())
+    nResp           := DateDiffMonth(CtoD("16/10/2002"), Date())
+    nResp           := DateDiffYear(CtoD("16/10/2002"), Date())
 
-    // Retona o numero do dia da semana
+    // Retona o numero do dia da semana - Domingo = 1 Segunda = 2 ...
     nResp           := Dow(dDataAtual)
 
-    // Descrição do dia da semana
+    // DescriÃ§Ã£o do dia da semana 
     cResp           := DiaSemana(dDataAtual)
 
     // Retorna a primeira ou a ultima data do mes corrente
@@ -96,4 +96,6 @@ User Function Datas()
     // Retorna o primeiro ou o ultimo dia do ano de uma data
     dDataRes        := FirstYDate(dDataAtual)
     dDataRes        := LastYDate(dDataAtual)
+
+RETURN
 
