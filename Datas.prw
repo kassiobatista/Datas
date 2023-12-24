@@ -1,6 +1,6 @@
 #INCLUDE "Protheus.ch"
 
-/*/(Protheus.doc) Operadores da Linguagem
+/*/(Protheus.doc) Manipulação de Datas
 Função : Analista de Sistemas
 @author Kassio B.
 Since 21/12/2023
